@@ -18,7 +18,7 @@ res.render("todo/todoview",{
 
 //handling both insert and update
 router.post('/',(req,res)=>{
-    if(req.body.id === '')
+    if(req.body._id === '')
         InsertRecord(req,res);
     else
         updateRecord(req,res);
